@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  internationalization-app:
+    build: .
+    ports:
+      - "4200:80"

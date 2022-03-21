@@ -1,0 +1,17 @@
+<mat-toolbar class="mat-elevation-z1">
+  <mat-toolbar-row>
+    <a mat-button href="">
+      <h1>Pierre-Auguste Renoir</h1>
+    </a>
+
+    <!-- Button that sets the language to english -->
+    <button mat-button *ngIf="isCurrentLanguage('en')" (click)="changeLanguage('en')">
+      {{ 'LANGUAGE.en' | translate }}
+    </button>
+
+    <!-- Button that sets the language to portuguese -->
+    <button mat-button *ngIf="isCurrentLanguage('pt')" (click)="changeLanguage('pt')">
+      {{ 'LANGUAGE.pt' | translate }}
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

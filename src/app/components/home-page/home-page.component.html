@@ -1,0 +1,8 @@
+<article>
+    <section>
+        <img src="assets/images/auguste.jpg" alt="Auguste Photo">
+
+        <!-- Creates a paragraph for each item in ‘HOME’’ -->
+        <p *ngFor="let item of 'HOME' | translate | keyvalue">{{ item.value }}</p>
+    </section>
+</article>
